@@ -31,3 +31,9 @@ https://bearcattattoo.com/
 
 
 https://www.skellingtontattoo.com/ 
+
+
+
+Maquette Figma :
+
+https://www.figma.com/file/x4gSVuXZE54CPA5N7oPb9z/Maquettes?node-id=101%3A3&t=g1ZLWFcUcaruSTeV-1
