@@ -1,6 +1,10 @@
 # Projet-Tatouage
 Projet n°1 : Maquette &amp; Coding d'un RWB sur le sujet : Salon de tatouage.
 
+Maquette Figma :
+
+https://www.figma.com/file/x4gSVuXZE54CPA5N7oPb9z/Maquettes?node-id=101%3A3&t=g1ZLWFcUcaruSTeV-1
+
 
 
 Inspirations :
@@ -18,7 +22,7 @@ https://revolver.qodeinteractive.com/
 
 
 
-https://preview.themeforest.net/item/dotwork-a-theme-for-tattoo-and-piercing-studios/full_screen_preview/22110554?irgwc=1&clickid=1wlTEQRVSxyNWT9W9ywHf2h8UkAwfY1bBU200w0&iradid=275988&irpid=369282&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius
+https://dotwork.qodeinteractive.com/
 
 
 
@@ -31,9 +35,3 @@ https://bearcattattoo.com/
 
 
 https://www.skellingtontattoo.com/ 
-
-
-
-Maquette Figma :
-
-https://www.figma.com/file/x4gSVuXZE54CPA5N7oPb9z/Maquettes?node-id=101%3A3&t=g1ZLWFcUcaruSTeV-1
