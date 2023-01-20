@@ -12,29 +12,44 @@
 
 <body>
     <header class="max-row">
-        <div id="bg-header"></div>
-        <!--Logo centrer,opacité-->
-        <div>
-            <figure><img src="./Ressources/CroppedLogoNoBG.png" alt="Inkfection Logo" id="logo"></figure>
-        </div>
-        <div id="menu-container">
-            <!--Menu gauche,opacité-->
-            <div id="menu-left">
+        <!--Divider + Background Opacité-->
+        <div id="bg-header">
+            <div id="white-line">
+                <!--Menu Fixé scroll-->
                 <nav>
-                    <ul id="menu">
-                        <li><a href="#">À propos</a></li>
-                        <li><a href="#">Tatouages</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
+                    <div id="menu-container">
+                        <ul id="menu-left">
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Tatouages</a></li>
+                        </ul>
+                        <!--Logo centrer,opacité réduite-->
+                        <!--<div id="logo-container"></div>-->
+                        <figure><img src="./Ressources/CroppedLogoNoBG.png" alt="Inkfection Logo" id="logo-header">
+                        </figure>
+                        <ul id="menu-right">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
+        </div>
     </header>
 
     <div class="max-row" id="main-page">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum aut natus deserunt, alias laboriosam id beatae nam, quo cupiditate molestiae doloremque voluptas temporibus accusantium suscipit numquam, fuga dolor tenetur tempora.
+        <div id="home-page" class="divider">
+            <figure>
+                <img src="" alt="">
+                <figcaption class="white-text">
+
+                </figcaption>
+            </figure>
+        </div>
     </div>
-    <footer class="max-row"></footer>
+
+    <footer class="max-row">
+        <div></div>
+    </footer>
 </body>
 
 </html>

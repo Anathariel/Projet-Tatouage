@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     text-decoration-style: none;
+    color: #000;
 }
 
 ul {
@@ -10,51 +11,71 @@ ul {
 }
 
 .max-row {
-    max-width: 100%;
+    max-width: 1903px;
     width: 100%;
 }
 
-/* HEADER BLOCK*/
-header {
-    display: flex;
-    position: fixed;
-    height: 120px;
-    width: 100%;
-    background-color: #111;
+.divider {
+    border-bottom: 5px solid #D5A975;
 }
+
+/* HEADER BLOCK - RWB unfriendly a refaire*/
 
 #bg-header {
+    position: fixed;
+    display: flex;
+    width: 1903px;
     height: 115px;
-    width: 100%;
-    background-image: url(../Ressources/Header\ Background.jpg);
-    opacity: 25%;
+    border-bottom: 5px solid #D5A975;
+    background: url(../Ressources/HeaderBGOpacity.png);
+    background-color: #666;
 }
 
+/*Menu Non-RWB pour l'instant*/
+
 #menu-container {
-    position: absolute;
-    width: 100%;
-    height: 65%;
-    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    row-gap: 100px;
+}
+
+#white-line {
     align-self: center;
+    width: 100%;
+    height: 65px;
+    background-color: #FFF;
     opacity: 75%;
 }
 
-#logo {
-    position: absolute;
-    z-index: 999;
-    left: 40%;
-    height: 120px;
-    width: 380px;
-    background-color: #000;
-    opacity: 85%;
+ul li {
+    display: inline-block;
+    transform: translateY(-28px);
+    align-self: center;
+    text-align: center;
+    font-size: xx-large;
+    height: 60px;
+    width: 150px;
+    background-color: aquamarine;
 }
 
-/*Menu*/
-
-
+#logo-header {
+    background-color: #000;
+    transform: translateY(-25px);
+}
 
 /*Main-Page*/
+
 #main-page {
     height: 1000px;
-    background-color: #111;
+    width: 1903px;
+    background-color: #666;
+}
+
+#home-page {
+    height: 1000px;
+    background: url(../Ressources/GettingTattooBGOpacity.png) center center / cover no-repeat;
 }
