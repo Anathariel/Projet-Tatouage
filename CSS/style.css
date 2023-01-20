@@ -6,17 +6,27 @@
     color: #000;
 }
 
-ul {
-    list-style: none;
-}
-
 .max-row {
     max-width: 1903px;
     width: 100%;
 }
 
+/* Mise en Page CSS / Textes*/
+
+ul {
+    list-style: none;
+}
+
 .divider {
     border-bottom: 5px solid #D5A975;
+}
+
+.white-text {
+    color: white;
+}
+
+.inner-shadow {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* HEADER BLOCK - RWB unfriendly a refaire*/
@@ -73,9 +83,19 @@ ul li {
     height: 1000px;
     width: 1903px;
     background-color: #666;
+    padding-top: 100px;
 }
 
 #home-page {
+    display: flex;
     height: 1000px;
     background: url(../Ressources/GettingTattooBGOpacity.png) center center / cover no-repeat;
+}
+
+#LogoMain {
+    margin: 150px 650px;
+    border: 4px solid rgba(0, 0, 0, 0.592);
+    height: 415px;
+    width: 550px;
+    border-radius: 10px;
 }
