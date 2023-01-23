@@ -13,7 +13,7 @@
 <body>
     <header class="max-row">
         <!--Divider + Background Opacité-->
-        <div id="bg-header">
+        <div id="bg-header" class="max-row">
             <div id="white-line">
                 <!--Menu Fixé scroll-->
                 <nav>
@@ -36,23 +36,182 @@
     </header>
 
     <div class="max-row" id="main-page">
-        <div id="home-page" class="divider">
+        <section id="home-page" class="divider">
             <figure id="LogoMain">
                 <img src="./Ressources/LogoNoBG.png" alt="Logo">
                 <figcaption>
-                    <p class="white-text" class="inner-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit provident deleniti veniam officia suscipit maxime temporibus. Reiciendis ipsa minima obcaecati, placeat nisi iusto explicabo excepturi doloribus saepe sed! Neque?</p>
+                    <p class="white-text inner-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        sit provident deleniti veniam officia suscipit maxime temporibus. Reiciendis ipsa minima
+                        obcaecati, placeat nisi iusto explicabo excepturi doloribus saepe sed! Neque?</p>
                 </figcaption>
             </figure>
-        </div>
-        <div id="promo" class="divider">
-            <div><figure><img src="" alt=""></figure></div>
-            <div><h1 class="white-text">Promotion</h1></div>
-            <div><figure><img src="" alt=""></figure></div>
-        </div>
+        </section>
+        <section id="promo" class="divider flexboxing inner-shadow">
+            <figure><img src="./Ressources/Icons-Designs/TriangleDesign.png" alt=""></figure>
+            <h1 class="white-text inner-shadow">Promotion</h1>
+            <figure><img src="./Ressources/Icons-Designs/SunDesign.png" alt=""></figure>
+
+        </section>
+        <h2 class="white-text inner-shadow" id="Tattoo-artist">Nos Artistes</h2>
+        <section id="Staff" class="flexboxing divider">
+            <div class="tatoueurs">
+                <figure><img src="./Ressources/Tatoueur.jpg" alt="Tattoo Artist" class="artists"></figure>
+                <div class="hidden-description">
+                    <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="tatoueurs">
+                <figure><img src="./Ressources/Tatoueur2.jpg" alt="Tattoo Artist" class="artists"></figure>
+                <div class="hidden-description">
+                    <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="tatoueurs">
+                <figure><img src="./Ressources/Tatoueur3.jpg" alt="Tattoo Artist" class="artists"></figure>
+                <div class="hidden-description">
+                    <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="divider">
+            <figure><img src="./Ressources/butterfly-tattoo-side-leg-black-white-moon.jpg"
+                    alt="butterfly tattoo side leg black white moon" class="showcase"></figure>
+            <div class="about"><img src="./Ressources/Icons-Designs/BirdTriangle.png" alt="">
+                <p class="white-text inner-shadow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+                    modi ex et nostrum esse, amet
+                    odio. Perspiciatis rerum corrupti voluptatem odit quibusdam illo error quisquam, ullam, hic eos
+                    voluptatum deserunt.</p>
+            </div>
+            <figure><img src="./Ressources/chest-tattoos-for-women.jpg"
+                    alt="Chest tattoo, deer skull, antler with roses" class="showcase"></figure>
+            <div class="about"><img src="./Ressources/Icons-Designs/SunTriangle.png" alt="">
+                <p class="white-text inner-shadow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+                    modi ex et nostrum esse, amet
+                    odio. Perspiciatis rerum corrupti voluptatem odit quibusdam illo error quisquam, ullam, hic eos
+                    voluptatum deserunt.</p>
+            </div>
+            <figure><img src="./Ressources/Tatouage.jpg" alt="Tattoo artist working on a client" class="showcase">
+            </figure>
+            <div class="about"><img src="./Ressources/Icons-Designs/HeartSword.png" alt="">
+                <p class="white-text inner-shadow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+                    modi ex et nostrum esse, amet
+                    odio. Perspiciatis rerum corrupti voluptatem odit quibusdam illo error quisquam, ullam, hic eos
+                    voluptatum deserunt.</p>
+            </div>
+        </section>
+        <section id="statistics" class="divider flexboxing">
+            <figure><img src="./Ressources/Icons-Designs/TriangleDesign.png">
+                <figcaption>
+                    <p class="white-text inner-shadow">5 années d'expériences</p>
+                </figcaption>
+            </figure>
+            <figure><img src="./Ressources/Icons-Designs/DiamondTriangle.png">
+                <figcaption>
+                    <p class="white-text inner-shadow">+100 clients fidèles</p>
+                </figcaption>
+            </figure>
+            <figure><img src="./Ressources/Icons-Designs/SunDesign.png">
+                <figcaption>
+                    <p class="white-text inner-shadow">+500 tatouages réalisés</p>
+                </figcaption>
+            </figure>
+            <figure><img src="./Ressources/Icons-Designs/BirdTriangle.png">
+                <figcaption>
+                    <p class="white-text inner-shadow">~100 Designs Uniques</p>
+                </figcaption>
+            </figure>
+            <figure><img src="./Ressources/Icons-Designs/StarDesign.png">
+                <figcaption>
+                    <p class="white-text inner-shadow">+100 Cover-up</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section id="formulaire" class="divider flexboxing">
+            <div id="horaires">
+                <<img src="./Ressources/Icons-Designs/SunTriangle.png" id="SunOut">
+                    <p class="white-text inner-shadow">Intéresser par un tatouage ? <br> Nous sommes là pour vous
+                        répondrent
+                        !</p>
+                    <p class="white-text inner-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                        dolorum ipsam dolorem totam amet placeat? Quasi sunt in consequuntur modi, aut iure veniam illum
+                        nesciunt culpa dolorum praesentium quas voluptate!</p>
+                    <p class="white-text inner-shadow">Lundi - Vendredi :&emsp;&emsp;&emsp;&emsp; 9h - 20h<br>
+                        Samedi :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 9h - 18h<br>
+                        Dimanche :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fermé
+                    </p>
+            </div>
+            <div id="form">
+                <form action="">
+
+                </form>
+            </div>
+        </section>
     </div>
 
-    <footer class="max-row">
-        <div></div>
+    <footer class="max-row flexboxing">
+        <div id="Company">
+            <h3 class="white-text inner-shadow">Inkfection</h3>
+            <p class="white-text inner-shadow">Distinctio, iste sapiente corrupti id cum deleniti doloremque modi
+                adipisci eum odio amet possimus natus a voluptate dolores sunt nesciunt, qui incidunt?</p>
+            <table>
+                <tr>
+                    <th><a href="#"><img id="icon" src="./Ressources/Icons-Designs/map-marker.png"></a></th>
+                    <th class="white-text inner-shadow"><a href="#">Hirtenstraße 19, 10178 Berlin</a></th>
+                </tr>
+                <tr>
+                    <th><img id="icon" src="./Ressources/Icons-Designs/phone-android.png"></th>
+                    <th class="white-text inner-shadow">+49 30 24041420 </th>
+                <tr>
+                    <th><a href="#"><img id="icon" src="./Ressources/Icons-Designs/mail-outline.png"></a></th>
+                    <th class="white-text inner-shadow"><a href="#">inkfection@example.com</a></th>
+                </tr>
+                </tr>
+            </table>
+        </div>
+        <div id="socials">
+            <h3 class="white-text inner-shadow">Follow Us</h3>
+            <table>
+                <tr>
+                    <th><a href="#"><img id="icon" src="./Ressources/Icons-Designs/Icons/ion_social-snapchat.png"></a>
+                    </th>
+                    <th class="white-text inner-shadow">@Inkfection</th>
+                </tr>
+                <tr>
+                    <th><a href="#"><img id="icon" src="Ressources\Icons-Designs\Icons\ion_social-twitter.png"></a></th>
+                    <th class="white-text inner-shadow"><a href="#">Twitter</a></th>
+                </tr>
+                <tr>
+                    <th><a href="#"><img id="icon" src="Ressources\Icons-Designs\Icons\typcn_social-facebook.png"></a>
+                    </th>
+                    <th class="white-text inner-shadow"><a href="#">Facebook</a></th>
+                </tr>
+                <tr>
+                    <th><a href="#"><img id="icon" src="Ressources\Icons-Designs\Icons\typcn_social-instagram.png"></a>
+                    </th>
+                    <th class="white-text inner-shadow"><a href="#">Instagram</a></th>
+                </tr>
+            </table>
+        </div>
+        <div id="footerGallery">
+            <figure><img src="./Ressources/FooterGallery.png" alt="Tattoo Artist in his shop"></figure>
+        </div>
+        <div id="copyright">
+            <figure><img class="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
+            <p class="white-text inner-shadow">© 2023, All Rights Reserved</p>
+            <figure><img class="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
+        </div>
     </footer>
 </body>
 

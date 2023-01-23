@@ -1,14 +1,24 @@
 * {
     margin: 0 auto;
     padding: 0;
-    text-decoration: none;
-    text-decoration-style: none;
-    color: #000;
 }
 
 .max-row {
-    max-width: 1903px;
+    max-width: 1400px;
     width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+.flexboxing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 /* Mise en Page CSS / Textes*/
@@ -17,31 +27,68 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #000;
+}
+
+a:hover {
+    color: #DDD;
+    transition: all .5s ease;
+}
+
 .divider {
     border-bottom: 5px solid #D5A975;
 }
 
 .white-text {
-    color: white;
+    color: #eee;
 }
 
 .inner-shadow {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
 }
 
-/* HEADER BLOCK - RWB unfriendly a refaire*/
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    padding: 25px 0;
+}
+
+#statistics p {
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+footer h3 {
+    font-size: xx-large;
+    padding-bottom: 5px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
+footer p {
+    padding: 10px 5px;
+    font-size: smaller;
+}
+
+/* HEADER BLOCK*/
 
 #bg-header {
     position: fixed;
     display: flex;
-    width: 1903px;
+    align-self: center;
     height: 115px;
     border-bottom: 5px solid #D5A975;
     background: url(../Ressources/HeaderBGOpacity.png);
     background-color: #666;
 }
 
-/*Menu Non-RWB pour l'instant*/
+/*Menu*/
 
 #menu-container {
     display: flex;
@@ -69,7 +116,7 @@ ul li {
     font-size: xx-large;
     height: 60px;
     width: 150px;
-    background-color: aquamarine;
+    padding-top: 15px;
 }
 
 #logo-header {
@@ -80,22 +127,152 @@ ul li {
 /*Main-Page*/
 
 #main-page {
-    height: 1000px;
-    width: 1903px;
-    background-color: #666;
+    background-color: #000;
     padding-top: 100px;
+    text-align: center;
 }
 
 #home-page {
     display: flex;
+    align-items: center;
+    align-content: center;
     height: 1000px;
     background: url(../Ressources/GettingTattooBGOpacity.png) center center / cover no-repeat;
+    background-color: #666;
 }
 
 #LogoMain {
-    margin: 150px 650px;
     border: 4px solid rgba(0, 0, 0, 0.592);
     height: 415px;
     width: 550px;
     border-radius: 10px;
 }
+
+/*Promotion Window*/
+
+/*Le Staff*/
+
+.artists {
+    padding: 10px 10px 0 10px;
+    width: 315px;
+}
+
+.hidden-description {
+    background-color: #d5aa75;
+}
+
+/*Portfolio*/
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.showcase {
+width: 466px;
+height: 350px;
+}
+
+.about {
+    width: 466px;
+    height: 350px;
+ background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
+}
+
+/*Stats*/
+
+#statistics img {
+    width: 122px;
+    height: 122px;
+}
+
+/*Formulaire*/
+
+#horaires {
+    height: 450px;
+    width: 650px;
+    margin: 50px;
+    text-align: center;
+    background-color: rgba(33, 33, 33, 0.567);;
+}
+#SunOut {
+    width: 73px;
+    height: 73px;
+    transform: translateY(-30px);
+}
+
+#horaires p:first-of-type {
+    font-size: x-large;
+    padding-bottom: 15px;
+    transform: translateY(-30px);
+}
+
+#horaires p:nth-child(3){
+    padding-bottom: 50px;
+}
+
+#horaires p:nth-child(4){
+    font-size: x-large;
+    padding-bottom: 30px;
+}
+
+#form {
+    width: 650px;
+    background-color: rgba(33, 33, 33, 0.567);;
+}
+
+
+/*FOOTER*/
+
+#icon {
+    width: 15px;
+    height: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-image: url(../Ressources/Icons-Designs/HeartSword.png);
+    background-color: #000 ;
+    background-size: auto 20%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#Company, #socials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    height: 280px;
+    width: 300px;
+    background-color: rgba(33, 33, 33, 0.567);
+    border-radius: 5px;
+}
+
+#footerGallery img {
+    display: flex;
+    align-self: flex-end;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+#copyright {
+    display: flex;
+    align-self: flex-end;
+    transform: translate(-550px);
+}
+#copyright img {
+    width: 15px;
+    height: 15px;
+}
+
+
