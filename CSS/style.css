@@ -256,7 +256,7 @@ footer {
     border-radius: 5px;
 }
 
-#footerGallery img {
+footer img:nth-child(1) {
     display: flex;
     align-self: flex-end;
     width: 350px;
