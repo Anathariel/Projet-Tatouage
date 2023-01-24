@@ -140,9 +140,11 @@ ul li {
 
         /** HEADER RWD */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
     ul li {
-        padding: 10px 35px 0 0;
+        font-size: x-large;
+        height: 50px;
+        padding: 20px 15px 0 0;
     }
 }
 
@@ -187,11 +189,18 @@ ul li {
     background-color: #d5aa75;
 }
 
-        /** FOOTER RWD */
+        /** STAFF RWD */
 
 @media screen and (max-width: 1000px) {
     .artists {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .artists {
+        width: 200px;
+        padding: 0;
     }
 }
 
@@ -217,12 +226,50 @@ ul li {
     background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
 }
 
+@media screen and (max-width: 800px) {
+    .showcase {
+        width: 400px;
+        height: 350px;
+    }
+    
+    .about {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .showcase {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .about {
+        width: 300px;
+        height: 350px;
+    }
+}
+
 /*& REASSURANCE */
 
 #statistics img {
     margin: 25px 0 0 0;
     width: 122px;
     height: 122px;
+}
+
+/** Reassurance RWD */
+
+@media screen and (max-width: 600px) {
+    #statistics img {
+    margin: 25px 0 0 0;
+    width: 95px;
+    height: 95px;
+    }
+
+    #statistics p {
+        width: 75px;
+    }
 }
 
 /*& HORAIRES */
@@ -256,6 +303,14 @@ ul li {
 
 #horaires p:nth-child(3) {
     padding-bottom: 25px;
+}
+
+/** Horaires RWD */
+
+@media screen and (max-width: 600px) {
+    #horaires {
+        height: 480px;
+    }
 }
 
 /*& FORM */
@@ -304,12 +359,20 @@ textarea {
     font-family: 'Lancelot', cursive;
 }
 
-/** FOOTER RWD */
+/** FORM RWD */
 
 @media screen and (max-width: 1200px) {
     #form {
         margin-bottom: 30px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    #form {
+        width: 550px;
+    }
+    textarea {
+        width: 450px;}
 }
 
 /*& FOOTER*/
@@ -362,11 +425,17 @@ footer img:nth-child(1) {
     }
 
     #Company,
-#socials {
-    margin-top: 15px;
-}
+    #socials {
+        margin-top: 15px;
+    }
 
 #copyright {
     transform: translateY(-15px);
+}
+}
+@media screen and (max-width: 600px) {
+#Company,
+#socials {
+    width: 250px;
 }
 }
