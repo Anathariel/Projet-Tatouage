@@ -148,6 +148,23 @@ ul li {
     }
 }
 
+@media screen and (max-width: 400px) {
+    ul li {
+        font-size: medium;
+        height: 50px;
+        padding: 10px 5px 0 0;
+    }
+
+    #bg-header {
+        height: 80px;
+    }
+
+    #logo-header {
+        width: 150px;
+        height: 100px;
+    }
+}
+
 /*& MAIN PAGE */
 
 #main-page {
@@ -172,10 +189,30 @@ ul li {
     border-radius: 10px;
 }
 
+        /** MAIN PAGE RWD */
+
+@media screen and (max-width: 400px) {
+    #LogoMain img {
+        height: 415px;
+        width: 350px;}
+
+        #main-page {
+            padding-top: 80px;
+        }
+}
+
 /*& PROMOTION */
 
 #promo img {
     padding: 15px 0;
+}
+
+/** PROMO RWD */
+
+@media screen and (max-width: 400px) {
+    #promo img {
+        width: 55px;
+    }
 }
 
 /*& STAFF */
@@ -200,6 +237,14 @@ ul li {
 @media screen and (max-width: 800px) {
     .artists {
         width: 200px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .artists {
+        width: 115px;
+        height: 480px;
         padding: 0;
     }
 }
@@ -250,6 +295,20 @@ ul li {
     }
 }
 
+@media screen and (max-width: 400px) {
+
+    .showcase {
+        width: 400px;
+        height: 350px;
+    }
+    
+    .about {
+        width: 400px;
+        height: 350px;
+    }
+
+}
+
 /*& REASSURANCE */
 
 #statistics img {
@@ -270,6 +329,18 @@ ul li {
     #statistics p {
         width: 75px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    #statistics img {
+        margin: 20px 5px 0 0;
+        width: 133px;
+        height: 133px;
+        }
+    
+        #statistics p {
+            width: 100px;
+        }
 }
 
 /*& HORAIRES */
@@ -310,6 +381,17 @@ ul li {
 @media screen and (max-width: 600px) {
     #horaires {
         height: 480px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #horaires {
+        height: 650px;
+    }
+
+    #agenda {
+        font-size: x-large;
     }
 }
 
@@ -375,6 +457,17 @@ textarea {
         width: 450px;}
 }
 
+@media screen and (max-width: 400px) {
+    #form {
+        width: 350px;}
+        textarea {
+            width: 250px;}
+            input {
+                width: 230px;
+            }
+    
+}
+
 /*& FOOTER*/
 
 #icon {
@@ -437,5 +530,20 @@ footer img:nth-child(1) {
 #Company,
 #socials {
     width: 250px;
+}
+}
+
+@media screen and (max-width: 400px) {
+    footer img:nth-child(1) {
+        width: 380px;
+    }
+
+    #Company,
+#socials {
+    width: 150px;
+}
+
+footer tr th a{
+    font-size: x-small;
 }
 }
