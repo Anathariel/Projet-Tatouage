@@ -140,21 +140,42 @@
         </section>
         <section id="formulaire" class="divider flexboxing">
             <div id="horaires">
-                <<img src="./Ressources/Icons-Designs/SunTriangle.png" id="SunOut">
-                    <p class="white-text inner-shadow">Intéresser par un tatouage ? <br> Nous sommes là pour vous
-                        répondrent
-                        !</p>
-                    <p class="white-text inner-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                        dolorum ipsam dolorem totam amet placeat? Quasi sunt in consequuntur modi, aut iure veniam illum
-                        nesciunt culpa dolorum praesentium quas voluptate!</p>
-                    <p class="white-text inner-shadow">Lundi - Vendredi :&emsp;&emsp;&emsp;&emsp; 9h - 20h<br>
-                        Samedi :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 9h - 18h<br>
-                        Dimanche :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fermé
-                    </p>
+                <img src="./Ressources/Icons-Designs/SunTriangle.png" id="SunOut">
+                <p class="white-text inner-shadow">Intéresser par un tatouage ? <br> Nous sommes là pour vous répondrent
+                    !</p>
+                <p class="white-text inner-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, at!
+                    Adipisci quam enim officiis facilis sit dolorum. Hic velit, sapiente odio eaque sunt adipisci nulla
+                    placeat, fuga omnis cum incidunt enim facilis vel! Delectus ipsa sunt illo! Explicabo optio
+                    reprehenderit cupiditate odio earum adipisci voluptate, sed doloremque iusto quam rem quaerat
+                    voluptatem vero excepturi dolorem ducimus, saepe nemo enim distinctio aspernatur totam et ex.
+                    Exercitationem quaerat rem quod ullam repellendus vel iste cum perferendis asperiores?</p>
+                <table id="agenda">
+                    <tr>
+                        <th>
+                            <p class="white-text inner-shadow"> Lundi - Vendredi :</p>
+                        </th>
+                        <th>
+                            <p class="white-text inner-shadow">9h - 20h</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p class="white-text inner-shadow"> Samedi :</p>
+                        </th>
+                        <th>
+                            <p class="white-text inner-shadow">10h - 18h</p>
+                        </th>
+                    </tr>
+                </table>
+
             </div>
             <div id="form">
-                <form action="">
-
+                <form action="#">
+                    <input type="text" id="lname" name="lname" value="Votre nom">
+                    <input type="text" id="fname" name="fname" value="Votre prénom"><br>
+                    <input type="text" id="mail" value="Votre e-mail"><br>
+                    <textarea name="message" id="message" rows="25" cols="80">Votre message . . .</textarea><br>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </section>
@@ -207,12 +228,12 @@
         <div id="footerGallery">
             <figure><img src="./Ressources/FooterGallery.png" alt="Tattoo Artist in his shop"></figure>
         </div>
-        <div id="copyright">
-            <figure><img class="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
-            <p class="white-text inner-shadow">© 2023, All Rights Reserved</p>
-            <figure><img class="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
-        </div>
-    </footer>
+    </footer class=" max-row flexboxing">
+    <div id="copyright">
+        <figure><img id="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
+        <p class="white-text inner-shadow">© 2023, All Rights Reserved</p>
+        <figure><img id="icon" src="./Ressources/Icons-Designs/FlowerOfLife.png"></figure>
+    </div>
 </body>
 
 </html>

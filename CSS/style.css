@@ -10,12 +10,13 @@
 
 body {
     background-color: #111;
+    font-family: 'Lancelot', cursive;
 }
 
 .flexboxing {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -31,11 +32,21 @@ a {
     text-decoration: none;
     text-decoration-style: none;
     color: #000;
+    font-family: 'Metal Mania', cursive;
 }
 
 a:hover {
     color: #DDD;
     transition: all .5s ease;
+}
+
+footer a {
+    color: #eee;
+    font-family: 'Lancelot', cursive;
+}
+
+footer a:hover {
+    color: #666;
 }
 
 .divider {
@@ -44,6 +55,7 @@ a:hover {
 
 .white-text {
     color: #eee;
+    font-family: 'Lancelot', cursive;
 }
 
 .inner-shadow {
@@ -59,20 +71,20 @@ h2 {
 }
 
 #statistics p {
-    padding-top: 15px;
+    padding: 25px 0;
     font-size: larger;
     font-weight: lighter;
 }
 
 footer h3 {
     font-size: xx-large;
-    padding-bottom: 5px;
+    padding: 5px 0 10px 0;
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
 }
 
 footer p {
-    padding: 10px 5px;
+    padding: 0 0 10px 0;
     font-size: smaller;
 }
 
@@ -150,6 +162,10 @@ ul li {
 
 /*Promotion Window*/
 
+#promo img {
+    padding: 15px 0;
+}
+
 /*Le Staff*/
 
 .artists {
@@ -173,32 +189,42 @@ ul li {
 }
 
 .showcase {
-width: 466px;
-height: 350px;
+    width: 466px;
+    height: 350px;
 }
 
 .about {
     width: 466px;
     height: 350px;
- background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
+    background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
 }
 
 /*Stats*/
 
 #statistics img {
+    margin: 25px 0 0 0;
     width: 122px;
     height: 122px;
 }
 
-/*Formulaire*/
+/*Formulaire & Horaire*/
 
 #horaires {
     height: 450px;
-    width: 650px;
+    width: 600px;
     margin: 50px;
     text-align: center;
-    background-color: rgba(33, 33, 33, 0.567);;
+    background-color: rgba(33, 33, 33, 0.567);
 }
+
+#agenda {
+    padding-top: 5px;
+}
+
+#agenda th {
+    padding: 0px 45px;
+}
+
 #SunOut {
     width: 73px;
     height: 73px;
@@ -206,25 +232,58 @@ height: 350px;
 }
 
 #horaires p:first-of-type {
-    font-size: x-large;
+    font-size: xx-large;
     padding-bottom: 15px;
-    transform: translateY(-30px);
 }
 
-#horaires p:nth-child(3){
-    padding-bottom: 50px;
+#horaires p:nth-child(3) {
+    padding-bottom: 25px;
 }
 
-#horaires p:nth-child(4){
-    font-size: x-large;
-    padding-bottom: 30px;
-}
-
+/*Formulaire*/
 #form {
-    width: 650px;
-    background-color: rgba(33, 33, 33, 0.567);;
+    height: 450px;
+    width: 600px;
+    background-color: rgba(33, 33, 33, 0.567);
 }
 
+form {
+    margin: 50px;
+}
+
+input {
+    width: 300px;
+    background-color: rgba(239, 239, 239, 0.206);
+    border-radius: 5px;
+    border-color: #333;
+    margin: 5px;
+    color: #BBB;
+    font-family: 'Lancelot', cursive;
+}
+
+input[type=text] {
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color: #BBB;
+    font-family: 'Lancelot', cursive;
+}
+
+#lname,
+#fname {
+    width: 200px;
+    font-family: 'Lancelot', cursive;
+}
+
+textarea {
+    width: 500px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.206);
+    border-radius: 5px;
+    border-color: #333;
+    color: #BBB;
+    resize: none;
+    font-family: 'Lancelot', cursive;
+}
 
 /*FOOTER*/
 
@@ -234,22 +293,18 @@ height: 350px;
 }
 
 footer {
-    width: 100%;
-    height: 450px;
+    height: 500px;
     text-align: center;
     background-image: url(../Ressources/Icons-Designs/HeartSword.png);
-    background-color: #000 ;
+    background-color: #000;
     background-size: auto 20%;
     background-repeat: no-repeat;
     background-position: top;
 }
 
-#Company, #socials {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    padding: 5px;
+#Company,
+#socials {
+    padding: 15px;
     height: 280px;
     width: 300px;
     background-color: rgba(33, 33, 33, 0.567);
@@ -257,22 +312,18 @@ footer {
 }
 
 footer img:nth-child(1) {
-    display: flex;
-    align-self: flex-end;
-    width: 350px;
-    height: 250px;
+    width: 550px;
+    height: 300px;
     border-radius: 30px;
     padding: 15px;
 }
 
 #copyright {
+    width: 200px;
     display: flex;
-    align-self: flex-end;
-    transform: translate(-550px);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    transform: translateY(-25px);
 }
-#copyright img {
-    width: 15px;
-    height: 15px;
-}
-
-
