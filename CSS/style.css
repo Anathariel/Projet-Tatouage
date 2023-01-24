@@ -6,6 +6,7 @@
 .max-row {
     max-width: 1400px;
     width: 100%;
+    margin: 0 auto;
 }
 
 body {
@@ -22,7 +23,24 @@ body {
     align-content: center;
 }
 
-/* Mise en Page CSS / Textes*/
+/* & Mise en Page CSS / Textes*/
+
+    /*~ Texte General*/
+
+.divider {
+    border-bottom: 5px solid #D5A975;
+}
+    
+.white-text {
+    color: #eee;
+    font-family: 'Lancelot', cursive;
+}
+    
+.inner-shadow {
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
+}
+
+    /*~ HEADER*/
 
 ul {
     list-style: none;
@@ -40,6 +58,28 @@ a:hover {
     transition: all .5s ease;
 }
 
+    /*~ Main Page*/
+
+h1 {
+    font-size: xx-large;
+}
+    
+h2 {
+    padding: 25px 0;
+}
+
+#home-page p {
+    font-size: x-large;
+}
+
+#statistics p {
+    padding: 25px 0;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+    /*~ FOOTER*/
+
 footer a {
     color: #eee;
     font-family: 'Lancelot', cursive;
@@ -47,33 +87,6 @@ footer a {
 
 footer a:hover {
     color: #666;
-}
-
-.divider {
-    border-bottom: 5px solid #D5A975;
-}
-
-.white-text {
-    color: #eee;
-    font-family: 'Lancelot', cursive;
-}
-
-.inner-shadow {
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
-}
-
-h1 {
-    font-size: xx-large;
-}
-
-h2 {
-    padding: 25px 0;
-}
-
-#statistics p {
-    padding: 25px 0;
-    font-size: larger;
-    font-weight: lighter;
 }
 
 footer h3 {
@@ -88,7 +101,7 @@ footer p {
     font-size: smaller;
 }
 
-/* HEADER BLOCK*/
+/* & HEADER */
 
 #bg-header {
     position: fixed;
@@ -100,17 +113,33 @@ footer p {
     background-color: #666;
 }
 
-/*Menu*/
+@media screen and (max-width: 840px) {
+    #bg-header {
+        width: 100%;
+    }
 
-#menu-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    row-gap: 100px;
+    ul li {
+        padding: 10px 10px 0 0;
+    }
+
+    #logo-header {
+        height: 115px;
+        width: 200px;
+    }
 }
+
+@media screen and (max-width: 660px) {
+    #bg-header {
+        height: 85px;
+    }
+    #logo-header{
+        height: 105px;
+        width:auto;
+    }
+}
+
+
+/*& MENU */
 
 #white-line {
     align-self: center;
@@ -126,9 +155,8 @@ ul li {
     align-self: center;
     text-align: center;
     font-size: xx-large;
-    height: 60px;
-    width: 150px;
-    padding-top: 15px;
+    height: 50px;
+    padding: 10px 30px 0 0;
 }
 
 #logo-header {
@@ -136,7 +164,7 @@ ul li {
     transform: translateY(-25px);
 }
 
-/*Main-Page*/
+/*& MAIN PAGE */
 
 #main-page {
     background-color: #000;
@@ -160,13 +188,13 @@ ul li {
     border-radius: 10px;
 }
 
-/*Promotion Window*/
+/*& PROMOTION */
 
 #promo img {
     padding: 15px 0;
 }
 
-/*Le Staff*/
+/*& STAFF */
 
 .artists {
     padding: 10px 10px 0 10px;
@@ -177,7 +205,7 @@ ul li {
     background-color: #d5aa75;
 }
 
-/*Portfolio*/
+/*& PORTFOLIO */
 
 #portfolio {
     display: flex;
@@ -199,7 +227,7 @@ ul li {
     background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
 }
 
-/*Stats*/
+/*& REASSURANCE */
 
 #statistics img {
     margin: 25px 0 0 0;
@@ -207,7 +235,7 @@ ul li {
     height: 122px;
 }
 
-/*Formulaire & Horaire*/
+/*& HORAIRES */
 
 #horaires {
     height: 450px;
@@ -240,7 +268,7 @@ ul li {
     padding-bottom: 25px;
 }
 
-/*Formulaire*/
+/*& FORM */
 #form {
     height: 450px;
     width: 600px;
@@ -277,6 +305,7 @@ input[type=text] {
 textarea {
     width: 500px;
     height: 250px;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.206);
     border-radius: 5px;
     border-color: #333;
@@ -285,7 +314,7 @@ textarea {
     font-family: 'Lancelot', cursive;
 }
 
-/*FOOTER*/
+/*& FOOTER*/
 
 #icon {
     width: 15px;
@@ -326,4 +355,10 @@ footer img:nth-child(1) {
     align-items: center;
     font-size: xx-small;
     transform: translateY(-25px);
+}
+
+@media screen and (max-width: 840px) {
+    footer {
+        height: auto;
+    }
 }
