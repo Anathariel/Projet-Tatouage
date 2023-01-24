@@ -30,12 +30,12 @@ body {
 .divider {
     border-bottom: 5px solid #D5A975;
 }
-    
+
 .white-text {
     color: #eee;
     font-family: 'Lancelot', cursive;
 }
-    
+
 .inner-shadow {
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
 }
@@ -63,7 +63,7 @@ a:hover {
 h1 {
     font-size: xx-large;
 }
-    
+
 h2 {
     padding: 25px 0;
 }
@@ -113,33 +113,7 @@ footer p {
     background-color: #666;
 }
 
-@media screen and (max-width: 840px) {
-    #bg-header {
-        width: 100%;
-    }
-
-    ul li {
-        padding: 10px 10px 0 0;
-    }
-
-    #logo-header {
-        height: 115px;
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    #bg-header {
-        height: 85px;
-    }
-    #logo-header{
-        height: 105px;
-        width:auto;
-    }
-}
-
-
-/*& MENU */
+    /*~ MENU */
 
 #white-line {
     align-self: center;
@@ -162,6 +136,14 @@ ul li {
 #logo-header {
     background-color: #000;
     transform: translateY(-25px);
+}
+
+        /** HEADER RWD */
+
+@media screen and (max-width: 1000px) {
+    ul li {
+        padding: 10px 35px 0 0;
+    }
 }
 
 /*& MAIN PAGE */
@@ -203,6 +185,14 @@ ul li {
 
 .hidden-description {
     background-color: #d5aa75;
+}
+
+        /** FOOTER RWD */
+
+@media screen and (max-width: 1000px) {
+    .artists {
+        width: 300px;
+    }
 }
 
 /*& PORTFOLIO */
@@ -314,6 +304,14 @@ textarea {
     font-family: 'Lancelot', cursive;
 }
 
+/** FOOTER RWD */
+
+@media screen and (max-width: 1200px) {
+    #form {
+        margin-bottom: 30px;
+    }
+}
+
 /*& FOOTER*/
 
 #icon {
@@ -356,9 +354,19 @@ footer img:nth-child(1) {
     font-size: xx-small;
     transform: translateY(-25px);
 }
+        /** FOOTER RWD */
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1200px) {
     footer {
         height: auto;
     }
+
+    #Company,
+#socials {
+    margin-top: 15px;
+}
+
+#copyright {
+    transform: translateY(-15px);
+}
 }
