@@ -141,15 +141,15 @@ header {
     margin: 5px;
 }
 
-#menu-left, #menu-right {
-    background-color: aqua;
-}
-
 ul li {
     display: inline-block;
     margin: 0 25px;
     font-size: xx-large;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
         /** HEADER RWD */
@@ -165,11 +165,34 @@ ul li {
 
 @media screen and (max-width: 700px){
     ul li {
-        margin: 5px 20px;}
+        margin: 5px 30px;}
 
     #menu-container img {
         display: none;
     }
+    .hidden {
+        display: inline-block;
+    }
+
+    #menu-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul li {
+        margin: 5px 20px;}
+}
+
+@media screen and (max-width: 500px){
+    ul li {
+        margin: 5px 10px;}
+}
+
+@media screen and (max-width: 420px){
+    ul li {
+        font-size:x-large;
+    margin: 5px 10px;}
 }
 
 /*& MAIN PAGE */
