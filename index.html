@@ -11,26 +11,28 @@
 </head>
 
 <body>
-    <header class="max-row">
-        <!--^ Divider + Background Header FIXED-->
-        <div id="bg-header" class="max-row">
-            <div id="white-line">
-                <!--^ Menu FIXED -->
-                <nav>
-                    <div id="menu-container" class="flexboxing">
-                        <ul id="menu-left">
+    <header class="max-row flexboxing">
+        <!--* Divider + Background Header FIXED-->
+        <div id="bg-header" class="max-row flexboxing">
+            <div id="white-line" class="flexboxing">
+                <!--? Menu FIXED -->
+                <div id="menu-container" class="flexboxing">
+                    <nav id="menu-left">
+                        <ul>
                             <li><a href="#">À propos</a></li>
                             <li><a href="#">Tatouages</a></li>
                         </ul>
-                        <!--^ Logo centrer -->
-                        <figure><img src="./Ressources/CroppedLogoNoBG.png" alt="Inkfection Logo" id="logo-header">
-                        </figure>
-                        <ul id="menu-right">
+                    </nav>
+                    <figure>
+                        <img src="./Ressources/CroppedLogoNoBG.png" alt="Inkfection Logo" id="logo-header">
+                    </figure>
+                    <nav id="menu-right">
+                        <ul>
                             <li><a href="#">News</a></li>
                             <li><a href="#">FAQ</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -55,33 +57,33 @@
         <!--^ Présentations Staff; ajouter effet hover si temps -->
         <h2 class="white-text inner-shadow" id="Tattoo-artist">Nos Artistes</h2>
         <section id="Staff" class="flexboxing divider">
-            <div class="tatoueurs">
-                <div id="hiddenStaff">
-                    <figure><img src="./Ressources/_hover avec noms/liens.png" alt="Tattoo artist">
-                        <div class="hidden-description">
-                            <figcaption>
-                            <p>Artist's Name</p>
-                            <p>Description</p>
-                            <p>Liens Sociaux</p>
-                        </figcaption></div>
-                    </figure>
-                    <figure><img src="./Ressources/_hover avec noms/liens-1.png" alt="Tattoo artist">
-                        <div class="hidden-description">
-                            <figcaption>
-                            <p>Artist's Name</p>
-                            <p>Description</p>
-                            <p>Liens Sociaux</p>
-                        </figcaption></div>
-                    </figure>
-                    <figure><img src="./Ressources/_hover avec noms/liens-2.png" alt="Tattoo artist">
-                        <div class="hidden-description">
-                            <figcaption>
-                            <p>Artist's Name</p>
-                            <p>Description</p>
-                            <p>Liens Sociaux</p>
-                        </figcaption></div>
-                    </figure>
-                </div>
+            <div id="hiddenStaff">
+                <figure><img src="./Ressources/_hover avec noms/liens.png" alt="Tattoo artist">
+                    <div class="hidden-description">
+                        <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption></div>
+                </figure>
+                <figure><img src="./Ressources/_hover avec noms/liens-1.png" alt="Tattoo artist">
+                    <div class="hidden-description">
+                        <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption></div>
+                </figure>
+                <figure><img src="./Ressources/_hover avec noms/liens-2.png" alt="Tattoo artist">
+                    <div class="hidden-description">
+                        <figcaption>
+                        <p>Artist's Name</p>
+                        <p>Description</p>
+                        <p>Liens Sociaux</p>
+                    </figcaption></div>
+                </figure>
+            </div>
+            <div class="artists">
                 <figure><img src="./Ressources/Tatoueur.jpg" alt="Tattoo Artist" class="artists"></figure>
                 <div class="hidden-description">
                     <figcaption>
@@ -91,7 +93,7 @@
                     </figcaption>
                 </div>
             </div>
-            <div class="tatoueurs">
+            <div class="artists">
                 <figure><img src="./Ressources/Tatoueur2.jpg" alt="Tattoo Artist" class="artists"></figure>
                 <div class="hidden-description">
                     <figcaption>
@@ -101,7 +103,7 @@
                     </figcaption>
                 </div>
             </div>
-            <div class="tatoueurs">
+            <div class="artists">
                 <figure><img src="./Ressources/Tatoueur3.jpg" alt="Tattoo Artist" class="artists"></figure>
                 <div class="hidden-description">
                     <figcaption>
@@ -112,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <!--^ Portfolio & Spécialité de chaque tatoueurs -->
+        <!--^ Portfolio & Spécialité de chaque TattooArtists -->
         <section id="portfolio" class="divider">
             <figure><img src="./Ressources/butterfly-tattoo-side-leg-black-white-moon.jpg"
                     alt="butterfly tattoo side leg black white moon" class="showcase"></figure>
