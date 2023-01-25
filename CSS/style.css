@@ -147,23 +147,19 @@ ul li {
         padding: 20px 15px 0 0;
     }
 }
+    
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     ul li {
         font-size: medium;
         height: 50px;
         padding: 10px 5px 0 0;
     }
 
-    #bg-header {
-        height: 80px;
-    }
-
     #logo-header {
         width: 150px;
         height: 100px;
-    }
-}
+    }}
 
 /*& MAIN PAGE */
 
@@ -191,14 +187,23 @@ ul li {
 
         /** MAIN PAGE RWD */
 
-@media screen and (max-width: 400px) {
-    #LogoMain img {
-        height: 415px;
-        width: 350px;}
+@media screen and (max-width: 650px) {
 
-        #main-page {
-            padding-top: 80px;
-        }
+    #main-page {
+        width: 100%;
+    }
+
+    #home-page {
+        width: 100%;
+    }
+
+    #LogoMain {
+        margin: 15px;
+        width: 90%;
+    }
+    #home-page img {
+        width: 90%
+    }
 }
 
 /*& PROMOTION */
@@ -209,7 +214,7 @@ ul li {
 
 /** PROMO RWD */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     #promo img {
         width: 55px;
     }
@@ -226,26 +231,43 @@ ul li {
     background-color: #d5aa75;
 }
 
+#hiddenStaff {
+    display: none;
+}
+
         /** STAFF RWD */
 
 @media screen and (max-width: 1000px) {
     .artists {
-        width: 300px;
+        display: flex;
+        width: 33%;
+    }
+
+    .hidden-description {
+        width: 15%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .artists {
-        width: 200px;
-        padding: 0;
+        display: none;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .artists {
-        width: 115px;
-        height: 480px;
-        padding: 0;
+    .hidden-description {
+        display: none;
+    }
+
+    #hiddenStaff {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    #Staff img {
+        width: 110px;
+        margin: 15px;
     }
 }
 
@@ -271,42 +293,39 @@ ul li {
     background: url(../Ressources/SectionBackground.png) bottom / contain no-repeat;
 }
 
-@media screen and (max-width: 800px) {
-    .showcase {
-        width: 400px;
-        height: 350px;
+/** PORTFOLIO RWD */
+@media screen and (max-width: 1399px) {
+    #portfolio figure {
+        display: flex;
+        width: 50%;
+        align-items: stretch;
+        align-content: stretch;
     }
-    
+
+    .showcase {
+        width: 100%;
+    }
+
     .about {
-        width: 400px;
-        height: 350px;
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .showcase {
-        width: 300px;
-        height: 350px;
+    #portfolio figure {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        align-content: stretch;
     }
-    
-    .about {
-        width: 300px;
-        height: 350px;
-    }
-}
-
-@media screen and (max-width: 400px) {
 
     .showcase {
-        width: 400px;
-        height: 350px;
-    }
-    
-    .about {
-        width: 400px;
-        height: 350px;
+        width: 95%;
     }
 
+    .about {
+        width: 100%;
+    }
 }
 
 /*& REASSURANCE */
@@ -319,7 +338,7 @@ ul li {
 
 /** Reassurance RWD */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 718px) {
     #statistics img {
     margin: 25px 0 0 0;
     width: 95px;
@@ -331,7 +350,7 @@ ul li {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 474px) {
     #statistics img {
         margin: 20px 5px 0 0;
         width: 133px;
@@ -346,7 +365,7 @@ ul li {
 /*& HORAIRES */
 
 #horaires {
-    height: 450px;
+    height: fit-content;
     width: 600px;
     margin: 50px;
     text-align: center;
@@ -354,11 +373,12 @@ ul li {
 }
 
 #agenda {
-    padding-top: 5px;
+    padding: 15px;
+    font-size: x-large;
 }
 
 #agenda th {
-    padding: 0px 45px;
+    padding: 15px 45px;
 }
 
 #SunOut {
@@ -376,29 +396,11 @@ ul li {
     padding-bottom: 25px;
 }
 
-/** Horaires RWD */
-
-@media screen and (max-width: 600px) {
-    #horaires {
-        height: 480px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    #horaires {
-        height: 650px;
-    }
-
-    #agenda {
-        font-size: x-large;
-    }
-}
-
 /*& FORM */
 #form {
-    height: 450px;
-    width: 600px;
+    height: fit-content;
+    width: fit-content;
+    margin: 50px;
     background-color: rgba(33, 33, 33, 0.567);
 }
 
@@ -408,30 +410,22 @@ form {
 
 input {
     width: 300px;
+    box-sizing: border-box;
     background-color: rgba(239, 239, 239, 0.206);
     border-radius: 5px;
     border-color: #333;
     margin: 5px;
     color: #BBB;
     font-family: 'Lancelot', cursive;
-}
-
-input[type=text] {
     padding: 0px 20px;
-    box-sizing: border-box;
-    color: #BBB;
-    font-family: 'Lancelot', cursive;
 }
 
 #lname,
 #fname {
     width: 200px;
-    font-family: 'Lancelot', cursive;
 }
 
 textarea {
-    width: 500px;
-    height: 250px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.206);
     border-radius: 5px;
@@ -443,29 +437,46 @@ textarea {
 
 /** FORM RWD */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #form {
         margin-bottom: 30px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     #form {
-        width: 550px;
+        margin: 50px;
     }
+
     textarea {
-        width: 450px;}
-}
+        width:100%;}
+
+        input {
+            width: 100%;
+        }
+    
+        #lname,
+    #fname {
+        width: 100%;
+}}
 
 @media screen and (max-width: 400px) {
     #form {
-        width: 350px;}
-        textarea {
-            width: 250px;}
-            input {
-                width: 230px;
-            }
-    
+        margin: 50px;
+    }
+    textarea {
+        width: 100%;
+        margin: 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #lname,
+#fname {
+    width: 100%;
+}
 }
 
 /*& FOOTER*/
@@ -512,7 +523,7 @@ footer img:nth-child(1) {
 }
         /** FOOTER RWD */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
     footer {
         height: auto;
     }
@@ -526,14 +537,14 @@ footer img:nth-child(1) {
     transform: translateY(-15px);
 }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
 #Company,
 #socials {
     width: 250px;
 }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 560px) {
     footer img:nth-child(1) {
         width: 380px;
     }
