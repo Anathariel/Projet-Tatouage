@@ -37,7 +37,7 @@ body {
 }
 
 .inner-shadow {
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.622);
 }
 
     /*~ HEADER*/
@@ -76,6 +76,13 @@ h2 {
     padding: 25px 0;
     font-size: larger;
     font-weight: lighter;
+}
+
+.hidden-text {
+    color: #eee;
+    font-family: 'Lancelot', cursive;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.622);
+    font-weight: bold;
 }
 
     /*~ FOOTER*/
@@ -128,6 +135,7 @@ header {
 #logo-header {
     background-color: #000;
     opacity: 95%;
+    transform: translateY(2px);
 }
 
     /*~ MENU */
@@ -159,7 +167,7 @@ ul li {
         margin: 0 10px;}
 
     #menu-container img {
-        transform: translate(-35px);
+        transform: translate(-35px, 2px);
     }
 }
 
@@ -189,10 +197,10 @@ ul li {
         margin: 5px 10px;}
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     ul li {
         font-size:x-large;
-    margin: 5px 10px;}
+        margin: 5px 15px;}
 }
 
 /*& MAIN PAGE */
@@ -252,23 +260,59 @@ ul li {
 }
 
 /*& STAFF */
-
+#Staff {
+    background-image: url(../Ressources/Icons-Designs/HeartSword.png);
+    background-color: #000;
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 #Staff img {
     display: flex;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 650px;
     width: 100%;
     margin: 5px;
+    cursor: pointer;
+}
+
+#Staff a > img {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.social-links {
+    display: inline-block;
 }
 
 .hidden-description {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: center;
+    opacity: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translate(-5px , -101%);
     margin: 5px 10px;
-    background-color: #D5A975;
+    background-color: rgba(0, 0, 0, 0.843);
+    background-image: url(../Ressources/Icons-Designs/BirdTriangle.png);
+    background-size: auto 50px;
+    background-repeat: no-repeat;
+    background-position: top;
     border-radius: 5px;
 }
 
-#hiddenStaff {
-    display: none;
+#Staff .artists:hover .hidden-description {
+    display: block;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
 }
 
         /** STAFF RWD */
@@ -278,29 +322,6 @@ ul li {
         flex-shrink: 2;
     }
 }
-
-/*@media screen and (max-width: 500px) {
-    .artists {
-        display: none;
-    }
-
-    .hidden-description {
-        display: none;
-    }
-
-    #hiddenStaff {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-    }
-
-    #Staff img {
-        width: 110px;
-        margin: 15px;
-    }
-}*/
 
 /*& PORTFOLIO */
 
@@ -427,7 +448,8 @@ ul li {
     padding-bottom: 25px;
 }
 
-/*& FORM */
+        /*& FORM */
+
 #form {
     height: fit-content;
     width: fit-content;
@@ -464,6 +486,10 @@ textarea {
     color: #BBB;
     resize: none;
     font-family: 'Lancelot', cursive;
+}
+
+#submit {
+    cursor: pointer;
 }
 
 /** FORM RWD */
